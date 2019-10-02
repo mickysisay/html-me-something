@@ -1,4 +1,5 @@
-<!doctype><html>
+
+<html>
 <head>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -9,8 +10,9 @@
 </title>
 </head>
 <body>
-    <h1 style ="text-align:center; background-color:black">M<strong>y biography or Something like that</strong></h1>
-    <p>I was born Michael (pronounced me-ka-el btw) in the Capital of Ethiopia:Addis Ababa
+    <div id="head"><h1 style ="text-align:center; background-color:black"><strong>My biography or Something like that</strong></h1>
+   </div>
+    <div id="bio1" class="bio"><p>I was born Michael (pronounced me-ka-el btw) in the Capital of Ethiopia:Addis Ababa
        Being the last child and the only guy, I was 'spoiled' and got whatever I wanted.But,that didn't
        mean I abused my privilages ... a lot. I've always been fasinated at how computers work, so I got my first
        laptop when i was like 5. Although I'm from a third world country,My parents made more or less a good income
@@ -23,8 +25,8 @@
         Internet cafe and download videos off youtube,take them home and practice on my own computer, Which was
         was really tiring and inconvenient(specially when getting into complicated stuff),so I kind of stopped doing it, for now atleast.
     </p>
-    
-    
+    </div>
+    <div class="bio" id="bio2">
     <p>
         Fast forward a couple years,around my 18th birthday, I got an opportunity to come to the US. Which beleive it or not is a big deal
         when you're from a third world country. So I moved out here,but really didn't know what to do. i had two options which were,either go 
@@ -36,15 +38,17 @@
         Using FreeCodeCamp I was able to get the basic concepts of Html,css and Javascript. But the problem with the course was It didn't
         go deep enough on objects and classes, which according to my knowledge now ,are absolutely useful tools that you're gonna use on your 
         day to day programming activities. It preferenced more of advanced algorithms than objects and classes, which beleive me helped me on the Launchcode 
-        program. But after I started working at starbucks, I really don't know what happened , I stopped the course (I had gotten the front-end certefication tho).
+        program. But after I started working at starbucks, I really don't know what happened , I stopped the course (I had gotten the front-end certefication though).
     </p>
+    </div>
+    <div class="bio" id="bio3">
     <div class="w3-content" style="max-width:700px; max-height:500px;">
             <a href="https://codepen.io/mickysisay/full/zZQYKZ" target="_blank"><img class="mySlides" src="https://www.dropbox.com/s/itf6d23ndi2235q/calc.PNG?raw=1" style="width:100%; display:none"></a>
             <a href="https://codepen.io/mickysisay/full/NpVOBL" target="_blank"><img class="mySlides" src="https://www.dropbox.com/s/1ba2gy0nc2w05xq/pomdro.PNG?raw=1" style="width:100%"></a>         
             <a href="https://codepen.io/mickysisay/full/PmOdEw" target="_blank"> <img class="mySlides" src="https://www.dropbox.com/s/cwq7l1jt73fjvgp/Capture.PNG?raw=1" style="width:100%; display:none"></a>
             <a href="https://codepen.io/mickysisay/full/yMmrpa" target="_blank"> <img class="mySlides" src="https://www.dropbox.com/s/vss9nuuskcnwpps/tic.PNG?raw=1" style="width:100%; display:none"></a>
             <a href="https://codepen.io/mickysisay/full/dWbaVL" target="_blank"><img class="mySlides" src="https://www.dropbox.com/s/lbs8xsdjkpxek8c/simon.PNG?raw=1" style="width:100%; display:none"></a>
-                      -->
+                      
                       <div class="w3-row-padding w3-section">
                               <div class="w3-col s2">
                                 <img class="demo w3-opacity w3-hover-opacity-off" src="https://www.dropbox.com/s/itf6d23ndi2235q/calc.PNG?raw=1"
@@ -73,7 +77,8 @@
         a basic understanding of HTML,CSS and Javascript,He told me about you guys. So I decided to apply to Launchcode and got accepted. Even though It's only been a month 
         since I've started this class I forsure think this is going to lead me into better things and even get me my dream job as a programmer. So Whoever is reading this, If you made
         it to this point, I'm going to leave you with one of my favorite quotes by Bill Gates "If you're born poor,It's not your fault.But if you die poor, it's your fault" so keep grinding.
-    </p>>
+    </p>
+    </div>
 <footer  >  <!-- Contact number 2-->
     <div style="background-color:gold;">
     <div class='row'>
@@ -93,7 +98,7 @@
       
       <h6 style = "text-align:center; font-size:1vw;">&copy2019 <strong> Michael Sisay</strong></h6>
     </div>
-      </footer>>   
+      </footer>   
       <script>
   function currentDiv(n) {
   showDivs(slideIndex = n);
