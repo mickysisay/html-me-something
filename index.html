@@ -10,9 +10,20 @@
 </title>
 </head>
 <body>
-    <div id="head"><h1 style ="text-align:center; background-color:black"><strong>My biography or Something like that</strong></h1>
-   </div>
-    <div id="bio1" class="bio"><p>I was born Michael (pronounced me-ka-el btw) in the Capital of Ethiopia:Addis Ababa
+
+  <div class="tope-bar navbar navbar-inverse" id="head">
+    <div class="container-fluid">
+       <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav ">
+             <li ><a id = "bi1" href="#bio1"> <br>Biography</a></li>
+                 <li id='bi2'><a href="#bio2"><br>journey to US</a></li>
+                 <li id='bi3'><a href="#bio3"><br>My projects</a></li>
+                 <li id='bi4'><a href="#bio4"><br>Contact info</a></li>
+                 
+             </ul>
+         </div>
+     </div>
+ </div>    <div id="bio1" class="bio"><p>I was born Michael (pronounced me-ka-el btw) in the Capital of Ethiopia:Addis Ababa
        Being the last child and the only guy, I was 'spoiled' and got whatever I wanted.But,that didn't
        mean I abused my privilages ... a lot. I've always been fasinated at how computers work, so I got my first
        laptop when i was like 5. Although I'm from a third world country,My parents made more or less a good income
@@ -80,18 +91,18 @@
     </p>
     </div>
 <footer  >  <!-- Contact number 2-->
-    <div style="background-color:gold;">
+    <div style="background-color:gold;" id="bio4">
     <div class='row'>
       <!-- Facebook link-->
-      <div class="col-md-1 col-md-offset-1"><a href="https://www.facebook.com/michael.ashenafi.758" target="_blank"><i class="fa fa-3x fa-facebook"></i></a>
+      <div class="col-xs-1 col-xs-offset-1"><a href="https://www.facebook.com/michael.ashenafi.758" target="_blank"><i class="fa fa-3x fa-facebook"></i></a>
       </div>
       <!-- twitter-->
-      <div class="col-md-2 col-md-offset-2"><a href="https://twitter.com/MichaelAshenaf5" target="_blank"><i class="fa fa-3x fa-twitter"></i></a>
+      <div class="col-xs-2 col-xs-offset-2"><a href="https://twitter.com/MichaelAshenaf5" target="_blank"><i class="fa fa-3x fa-twitter"></i></a>
       </div>
       <!-- Linkedin-->
-      <div class="col-md-2 col-md-offset-2" ><a href="https://www.linkedin.com/in/michael-sisay-626761105/" target="_blank"><i class="fa fa-3x fa-linkedin"></i></a>
+      <div class="col-xs-2 col-xs-offset-2" ><a href="https://www.linkedin.com/in/michael-sisay-626761105/" target="_blank"><i class="fa fa-3x fa-linkedin"></i></a>
       </div>
-      <div class="col-md-1 col-md-offset-1" ><a href="https://www.instagram.com/micky_sisay/" target="_blank"><i class="fa fa-3x fa-instagram"></i></a>
+      <div class="col-xs-1 col-xs-offset-1" ><a href="https://www.instagram.com/micky_sisay/" target="_blank"><i class="fa fa-3x fa-instagram"></i></a>
       </div>
       
       </div>
@@ -99,11 +110,26 @@
       <h6 style = "text-align:center; font-size:1vw;">&copy2019 <strong> Michael Sisay</strong></h6>
     </div>
       </footer>   
-      <script>
-  function currentDiv(n) {
-  showDivs(slideIndex = n);
-}
-
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+     <script>
+       window.onload = function(){
+       
+           pageScroll();
+             } 
+             //used a w3c library for my project previw
+function currentDiv(n) {
+       showDivs(slideIndex = n);
+ } //used jquery to scroll page 
+ function pageScroll(){
+      for(let i=1;i<5;i++){
+        $("#bi"+i).click(()=>{
+         
+          $('html, body').animate({
+        scrollTop: $("#bio"+i).offset().top
+    }, 600);
+        });
+      }
+ }
 function showDivs(n) {
   var i;
   var x = document.getElementsByClassName("mySlides");
